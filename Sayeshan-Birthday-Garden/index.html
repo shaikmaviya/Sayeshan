@@ -1,0 +1,114 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sayeshan’s Birthday Garden</title><style>
+*{box-sizing:border-box}body{margin:0;background:#fff9e9;color:#214d3c;font-family:"Trebuchet MS",sans-serif}header,main,footer{max-width:1150px;margin:auto;padding:0 6%}header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d5d6be}header strong{font:italic bold 23px Georgia}a{color:inherit}header a{font-size:14px}.hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:5%;padding:65px 0 58px}.kicker{letter-spacing:.18em;font-size:12px;font-weight:bold;color:#755737}h1,h2{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(52px,6.5vw,91px);line-height:.95;letter-spacing:-.065em;margin:21px 0}h1 em{color:#b44c33}p{font-size:18px;line-height:1.55;max-width:400px}button{border:0;border-radius:30px;padding:15px 24px;background:#214d3c;color:white;font:bold 15px inherit;font-family:inherit;cursor:pointer}.portrait{width:100%;margin:auto;padding:clamp(6px,1.1vw,13px);border:3px double #a77834;border-radius:9px;background:linear-gradient(135deg,#fff0b5,#bf8b43 38%,#ffe6a2 62%,#ad803f);box-shadow:0 8px 22px #553d282b}.portrait img{outline:1px solid #835d32}.portrait img{width:100%;height:auto;display:block}.flower{position:absolute;bottom:4%;left:-13%;color:#dc785a;font:100px Georgia;animation:sway 3s ease-in-out infinite alternate}.cake{font-size:34px;display:inline-block;animation:sway 1.3s ease-in-out infinite alternate;vertical-align:middle;margin-left:12px}@keyframes sway{to{transform:rotate(12deg) translateY(-5px)}}section.album{border-top:1px solid #d5d6be;padding:25px 0}h2{font-size:40px;letter-spacing:-.05em;margin:12px 0 25px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.grid a{background:white;padding:7px;box-shadow:0 2px 7px #35452d1c}.grid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 28%}footer{text-align:center;padding:35px;font:italic 21px Georgia}.petal{position:fixed;top:-55px;pointer-events:none;z-index:5;animation:fall 3s ease-in forwards}@keyframes fall{to{transform:translate(25px,110vh) rotate(260deg)}}#message{font:italic 19px Georgia;color:#98432d}@media(max-width:650px){.hero{grid-template-columns:1fr;text-align:center;padding:30px 0;gap:25px}.hero p{margin:15px auto}.portrait{max-width:460px}.grid{grid-template-columns:1fr 1fr}header{height:62px}}@media(prefers-reduced-motion:reduce){*{animation:none!important}.petal{display:none}}
+dialog{width:min(94vw,960px);max-height:96dvh;border:0;border-radius:18px;background:#fff9e9;color:#214d3c;padding:12px;box-shadow:0 20px 90px #192d2780}dialog::backdrop{background:#0b211cdb}dialog img{width:100%;height:74dvh;object-fit:contain;display:block}dialog nav{display:flex;justify-content:space-between;gap:6px;margin-top:8px}dialog button{padding:10px 16px}.bakery{border-top:1px solid #d5d6be;padding:32px 0;text-align:center;background:radial-gradient(ellipse closest-side,#ffe5cf,transparent)}.dessert{--icing:#ee98a7;--crumb:#eab884;position:relative;width:160px;height:70px;margin:62px auto 20px;border-radius:18px 18px 12px 12px;background:linear-gradient(var(--icing) 0 28%,var(--crumb) 29% 54%,var(--icing) 55% 65%,var(--crumb) 66%);border-bottom:5px solid #ba8767;box-shadow:0 8px 0 4px #fffcf5,0 12px 0 7px #a7c8b8}.stick{position:absolute;top:-29px;width:8px;height:30px;background:repeating-linear-gradient(35deg,#fff6dc 0 5px,#d97575 6px 10px)}.stick:before{content:"";position:absolute;background:#ffba3e;width:11px;height:17px;left:-1px;top:-17px;border-radius:70% 30% 60% 40%;box-shadow:0 0 10px #ffbc41;animation:flicker .55s ease-in-out infinite alternate}.out .stick:before{opacity:0}.bakery select{padding:10px;border-radius:12px;background:white;color:#214d3c}.bakery button{margin:10px}.portrait{cursor:zoom-in}@keyframes flicker{to{transform:rotate(9deg) scaleY(.86)}}@media(prefers-reduced-motion:reduce){.stick:before{animation:none}}.header-actions{display:flex;align-items:center;gap:12px}#music{padding:8px 12px;font-size:13px}@media(max-width:400px){header{padding:0 3%}header strong{font-size:18px}.header-actions{gap:6px}}
+@media(prefers-reduced-motion:no-preference){
+ .portrait{background-size:250% 250%;animation:gild 4s ease-in-out 2 alternate,unfold .85s cubic-bezier(.2,.8,.3,1) both}
+ .cake-reveal{animation:rise .8s cubic-bezier(.2,.8,.3,1.2) both}
+ @keyframes gild{to{background-position:100% 100%}}
+ @keyframes unfold{from{opacity:0;transform:translateY(16px) rotate(-1deg)}}
+ @keyframes rise{from{opacity:0;transform:translateY(24px) scale(.8)}}
+}
+.wish-bloom{position:fixed;pointer-events:none;z-index:6;line-height:1}
+
+@media(max-width:650px){
+ header{height:auto;min-height:62px;flex-wrap:wrap;gap:2px 10px;padding-block:6px}
+ .header-actions a{display:inline-flex;align-items:center;min-height:44px}
+ button,select{min-height:44px}
+ .hero{grid-template-columns:minmax(0,1fr)}
+ .hero h1{font-size:clamp(42px,10vw,58px)}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .grid a{padding:4px}
+ .bakery label{display:flex;align-items:center;justify-content:center;gap:10px}
+ .bakery select{font-size:16px}
+ dialog{padding:8px}
+ dialog img{height:min(72dvh,calc(95dvh - 75px))}
+ dialog nav button{padding:8px;flex:1}
+}
+@media(max-height:480px) and (orientation:landscape){
+ dialog img{height:calc(90dvh - 70px)}
+}
+</style><header><strong>✿ Birthday Garden</strong><nav class="header-actions"><button id="music" type="button">♫ Play song</button><a href="#album">Photo album ↓</a></nav></header><audio id="song" autoplay preload="auto" src="birthday.mp3"></audio><main><section class="hero"><div><div class="kicker">FOR THE BIRTHDAY BOY</div><h1>Happy birthday,<br><em>Sayeshan!</em></h1><p>May your pockets be full of petals, your plate full of cake, and your day full of people who love you.</p><button id="wish">Make a wish ✦</button><span class="cake" aria-hidden="true">🎂</span><div id="message" role="status"></div></div><div class="portrait"><img src="photos/surprise.jpg" alt="Birthday boy has an alibi — the birthday boy in a gold crown surrounded by cake and confetti"></div></section><section class="bakery"><h2>Your birthday cake</h2><div class="dessert" aria-hidden="true"><i class="stick" style="left:25%"></i><i class="stick" style="left:50%"></i><i class="stick" style="left:75%"></i></div><label>Choose a cake <select id="flavor"><option>Strawberry</option><option>Chocolate</option><option>Blueberry</option></select></label> <button id="blow">Blow out candles</button></section><section id="album" class="album"><h2>Your birthday album</h2><div class="grid"></div></section></main><dialog id="viewer" aria-label="Birthday photo viewer"><img alt=""><nav><button id="prev">← Previous</button><button id="close">Close</button><button id="next">Next →</button></nav></dialog><footer>With love, on your special day ♡</footer><script>
+const photos={surprise:'Birthday boy has an alibi — birthday poster',suit:'All dressed up in blue',ride:'Together on the motorcycle',steps:'Backpacks on the steps',party:'Dressed for a celebration',garden:'Together by the blue gate',star:'The birthday boy'};for(const [file,label] of Object.entries(photos)){if(file==='surprise')continue;const a=document.createElement('a'),img=new Image();a.dataset.key=file;a.href=img.src='photos/'+file+'.jpg';img.alt=label;a.append(img);document.querySelector('.grid').append(a)}
+document.querySelector('#wish').onclick=()=>{document.querySelector('#message').textContent='May your wish come true, Sayeshan!';shower(document.querySelector('#wish'))};function shower(origin){
+ if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+ document.querySelectorAll('.wish-bloom').forEach(flower=>flower.remove());
+ const box=origin.getBoundingClientRect();
+ for(let i=0;i<32;i++){
+  const flower=document.createElement('span');
+  flower.className='wish-bloom';
+  flower.setAttribute('aria-hidden','true');
+  flower.textContent=['✿','❀','✦'][i%3];
+  flower.style.color=['#bd5272','#da8641','#ba912c','#798c5b'][i%4];
+  flower.style.fontSize=(14+Math.random()*16)+'px';
+  flower.style.left=(box.left+box.width/2)+'px';
+  flower.style.top=box.top+'px';
+  document.body.append(flower);
+  const angle=Math.PI*(.1+.8*Math.random()),reach=70+Math.random()*155;
+  const dx=Math.cos(angle)*reach,dy=-Math.sin(angle)*reach;
+  const motion=flower.animate([
+   {transform:'scale(.2)',opacity:0},
+   {transform:'translate('+dx+'px,'+dy+'px) rotate(80deg)',opacity:1,offset:.43},
+   {transform:'translate('+dx*1.7+'px,'+(dy+130)+'px) rotate(215deg)',opacity:0}
+  ],{duration:1300+Math.random()*750,easing:'ease-out'});
+  motion.onfinish=()=>flower.remove();
+ }
+}
+if('IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>{
+  if(entries.some(entry=>entry.isIntersecting)){
+   document.querySelector('.dessert').classList.add('cake-reveal');
+   observer.disconnect();
+  }
+ });
+ observer.observe(document.querySelector('.dessert'));
+}
+
+const viewer=document.querySelector('#viewer'), keys=Object.keys(photos);
+let current=0;
+function showPhoto(index){
+ current=(index+keys.length)%keys.length;
+ const key=keys[current], picture=viewer.querySelector('img');
+ picture.src='photos/'+key+'.jpg'; picture.alt=photos[key];
+ if(!viewer.open)viewer.showModal();
+}
+document.querySelectorAll('.grid a').forEach((link,i)=>link.onclick=e=>{e.preventDefault();showPhoto(keys.indexOf(link.dataset.key))});
+{ const selector='.portrait', key='surprise';
+ const frame=document.querySelector(selector);frame.tabIndex=0;frame.setAttribute('role','button');frame.setAttribute('aria-label','Enlarge '+photos[key]);
+ frame.onclick=()=>showPhoto(keys.indexOf(key));frame.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();frame.click()}};
+}
+document.querySelector('#prev').onclick=()=>showPhoto(current-1);
+document.querySelector('#next').onclick=()=>showPhoto(current+1);
+document.querySelector('#close').onclick=()=>viewer.close();
+viewer.onkeydown=e=>{if(e.key==='ArrowLeft')showPhoto(current-1);if(e.key==='ArrowRight')showPhoto(current+1)};
+const dessert=document.querySelector('.dessert'), blow=document.querySelector('#blow');
+document.querySelector('#flavor').onchange=e=>{
+ const colors={Strawberry:['#ee98a7','#eab884'],Chocolate:['#694033','#ac7656'],Blueberry:['#aca1d9','#dbbfa4']}[e.target.value];
+ dessert.style.setProperty('--icing',colors[0]);dessert.style.setProperty('--crumb',colors[1]);
+ if(!matchMedia('(prefers-reduced-motion:reduce)').matches)dessert.animate([{transform:'scale(.93)'},{transform:'scale(1.04)'},{transform:'scale(1)'}],350);
+};
+blow.onclick=()=>{const out=dessert.classList.toggle('out');blow.textContent=out?'Relight candles':'Blow out candles';if(out)shower(dessert)};
+
+const song=document.querySelector('#song'), music=document.querySelector('#music');
+let pausedByUser=false;
+function playBirthdaySong(){
+ song.play().catch(()=>{music.textContent='♫ Retry song'});
+}
+music.onclick=()=>{
+ pausedByUser=!song.paused;
+ if(pausedByUser)song.pause();else playBirthdaySong();
+};
+song.onplay=()=>{music.textContent='Ⅱ Pause song'};
+song.onpause=song.onended=()=>{music.textContent='♫ Play song'};
+document.querySelector('#wish').addEventListener('click',()=>{
+ if(song.paused && !pausedByUser)playBirthdaySong();
+});
+
+// Retry on the first gesture when the browser requires user activation.
+function startOnGesture(event){
+ if(event.target.closest('#music'))return;
+ if(song.paused && !pausedByUser && !song.ended)playBirthdaySong();
+}
+document.addEventListener('click',startOnGesture);
+song.addEventListener('playing',()=>document.removeEventListener('click',startOnGesture),{once:true});
+song.play().catch(()=>{music.textContent='♫ Play song'});
+</script></html>
